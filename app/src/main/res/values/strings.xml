@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">BFF Client</string>
+    <string name="facebook_app_id">2488503811180456</string>
+    <string name="fb_login_protocol_scheme">fb2488503811180456</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_stadiums">Добро</string>
+    <string name="welcome_to_stadiums2">пожаловать!</string>
+    <string name="phone_number_prefix">+996</string>
+    <string name="near_by_stadiums">Рядом</string>
+    <string name="all">Все</string>
+    <string name="title_stadiums">Стадионы</string>
+    <string name="title_map">Карта</string>
+    <string name="title_booking">Запросы</string>
+    <string name="title_profile">Профиль</string>
+    <string name="title_edit">Редактировать</string>
+    <string name="log_out">Выход</string>
+    <string name="open_table">Открыть расписание брони</string>
+
+    <string name="request_active">Активные</string>
+    <string name="request_waiting">В ожидании</string>
+    <string name="request_rejected">Отказанные</string>
+    <string name="request_success">Запрос отправлен</string>
+    <string name="error">Невозможно связаться с сервером</string>
+    <string name="no_selected_date">Не выбрано время</string>
+    <string name="request">Запрос</string>
+    <string name="request_dialog">Вы действительно хотите отправить запрос на бронирование?</string>
+    <string name="delete_dialog">Вы действительно хотите удалить запрос на бронирование?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="empty">Пусто</string>
+    <string name="field">Поле</string>
+    <string name="time">Время</string>
+    <string name="status">Статус</string>
+    <string name="cancel">Отменить</string>
+    <string name="deleted">Удалено</string>
+    <string name="send_code">Отправить код</string>
+    <string name="verify">Подтвердить код</string>
+    <string name="saved">Сохранено</string>
+    <string name="cant_save">Не удалось сохранить</string>
+    <string name="saved_stadiums">Сохраненные</string>
+    <string name="save">Сохранить</string>
+</resources>

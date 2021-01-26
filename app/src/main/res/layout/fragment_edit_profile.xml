@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.profile.EditProfileFragment">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/profile_image_border"
+                android:padding="3dp"
+                android:id="@+id/edit_profile_image_imageView"/>
+
+        <EditText
+                android:id="@+id/et_edit_user_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/spacing_small_8"
+                android:background="@drawable/edit_text_style"
+                android:hint="My name"
+                android:maxLines="1" />
+
+        <TextView
+                android:id="@+id/tv_edit_user_birthdate"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/spacing_small_8"
+                android:background="@drawable/edit_text_style"
+                android:hint="Birthdate" />
+
+        <Button
+                android:id="@+id/save_btn"
+                android:text="@string/save"
+                android:background="@drawable/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/pb_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</FrameLayout>

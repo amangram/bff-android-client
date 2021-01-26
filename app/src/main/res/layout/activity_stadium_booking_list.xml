@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.stadium.booking.StadiumBookingListActivity">
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageButton
+                android:id="@+id/btn_prev_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="@dimen/spacing_small_8"
+                android:src="@drawable/ic_arrow_left" />
+
+        <TextView
+                android:id="@+id/booking_day_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/colorSecondary"
+                android:textSize="@dimen/font_large_24" />
+
+        <ImageButton
+                android:id="@+id/btn_next_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="@dimen/spacing_small_8"
+                android:src="@drawable/ic_arrow_right" />
+    </LinearLayout>
+
+    <Button android:id="@+id/btn_send_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/spacing_small_8"
+            android:layout_marginEnd="@dimen/spacing_small_8"
+            android:background="@drawable/button_style"
+            android:text="Забронировать" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/booking_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
+    <ProgressBar
+            android:id="@+id/pb_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+</RelativeLayout>

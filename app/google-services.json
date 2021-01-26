@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "923182037550",
+    "firebase_url": "https://booking-football-fields.firebaseio.com",
+    "project_id": "booking-football-fields",
+    "storage_bucket": "booking-football-fields.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923182037550:android:3adcf54288681922",
+        "android_client_info": {
+          "package_name": "kg.bff.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923182037550-10p23jpqj6vsf204gjg9p8v381semda5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kg.bff.admin",
+            "certificate_hash": "27a0d4bb202e649f45a55be9fca87a3763271e49"
+          }
+        },
+        {
+          "client_id": "923182037550-9a78r480d7q5msqim6eolaace47joan8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOtwYBioj1ATlelES4k1x3ldbZwFSgwQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923182037550-9a78r480d7q5msqim6eolaace47joan8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "923182037550-gur4daemcqqv5dhsg3sfe8st6d1ot88k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.generix.BffAdmin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923182037550:android:bf0053e870330e37",
+        "android_client_info": {
+          "package_name": "kg.bff.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923182037550-gp38ej07an594btfu1spadriif83um4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kg.bff.client",
+            "certificate_hash": "686077980e5210a11b2afaa798038100354539dd"
+          }
+        },
+        {
+          "client_id": "923182037550-b6lbgp6hmtjqt7artpdpcsor6jgq1ji5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kg.bff.client",
+            "certificate_hash": "9cf05260c69167e5b2c36c80e8e67df58d05d2c9"
+          }
+        },
+        {
+          "client_id": "923182037550-9a78r480d7q5msqim6eolaace47joan8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOtwYBioj1ATlelES4k1x3ldbZwFSgwQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923182037550-9a78r480d7q5msqim6eolaace47joan8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "923182037550-gur4daemcqqv5dhsg3sfe8st6d1ot88k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.generix.BffAdmin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

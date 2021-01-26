@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.stadium.detail.StadiumDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E5E5E5"
+            android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+                android:id="@+id/stadium_images_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_large_24"
+                app:ci_drawable="@drawable/green_dot"
+                app:ci_height="@dimen/spacing_small_8"
+                app:ci_width="@dimen/spacing_small_8"
+                app:layout_constraintBottom_toBottomOf="@id/stadium_images_viewPager" />
+
+        <TextView
+                android:id="@+id/stadium_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:textSize="30sp"
+                android:textColor="#001B35"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stadium_images_viewPager" />
+
+        <ImageView
+                android:id="@+id/save_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/stadium_name_tv" />
+        <TextView
+                android:id="@+id/stadium_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_large_20"
+                android:textColor="@color/colorSecondary"
+            app:layout_constraintTop_toBottomOf="@id/stadium_name_tv"
+            app:layout_constraintEnd_toEndOf="@id/save_iv"/>
+
+        <TextView
+                android:id="@+id/stadium_description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small_8"
+                android:textColor="#24D066"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/stadium_name_tv"
+                app:layout_constraintTop_toBottomOf="@+id/stadium_price_tv" />
+
+        <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/spacing_small_8"
+                app:layout_constraintEnd_toEndOf="@id/save_iv"
+                app:layout_constraintStart_toStartOf="@id/stadium_name_tv"
+                app:layout_constraintTop_toBottomOf="@id/stadium_description_tv" />
+
+        <Button
+                android:id="@+id/booking_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/spacing_normal_16"
+                app:layout_constraintEnd_toEndOf="@id/save_iv"
+                app:layout_constraintStart_toStartOf="@id/stadium_name_tv"
+                app:layout_constraintTop_toBottomOf="@id/map"
+                android:background="@drawable/button_style"
+                android:text="@string/open_table" />
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal_16"
+                android:layout_marginBottom="@dimen/spacing_huge_32"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/save_iv"
+                app:layout_constraintStart_toStartOf="@id/stadium_name_tv"
+                app:layout_constraintTop_toBottomOf="@id/booking_btn"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageButton
+                    android:id="@+id/whatsApp_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_huge_32"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_whatsapp" />
+
+            <ImageButton
+                    android:id="@+id/telegram_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_huge_32"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_telegram" />
+
+            <ImageButton
+                    android:id="@+id/phone_call_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_phone_call" />
+        </LinearLayout>
+        <ProgressBar
+                android:id="@+id/pb_stadium_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+    <TextView android:id="@+id/hour_tv"
+            android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:text="aa"
+            android:layout_weight="1"
+              android:gravity="center"
+    />
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cv_status"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:elevation="0dp"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/spacing_normal_16">
+
+        <TextView
+                android:id="@+id/tv_status_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/font_large_24"
+                android:textColor="@color/colorPrimary" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+        <CheckBox
+                android:id="@+id/cb_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/round_checkbox"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                android:gravity="center|end"
+                android:scaleX="0.9"
+                android:scaleY="0.9" />
+    </LinearLayout>
+
+
+</LinearLayout>
